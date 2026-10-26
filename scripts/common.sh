@@ -3,6 +3,8 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 CYT="$ROOT/cleanyourtv"                       # upstream checkout made by setup.sh
 PY="$CYT/tools/venv/bin/python"
+[ -x "$PY" ] || PY="$CYT/tools/venv/Scripts/python.exe"   # Windows (Git Bash) layout
+export MSYS_NO_PATHCONV=1                                  # Git Bash: keep /sdcard/... paths as they are
 LISTS=("$ROOT"/lists/batch-*.txt)
 STOCK_HOME=com.amazon.tv.launcher
 

@@ -9,6 +9,10 @@ if [ ! -d cleanyourtv/.git ]; then
 fi
 git -C cleanyourtv fetch -q origin "$REV" 2>/dev/null || true
 git -C cleanyourtv checkout -q "$REV"
-python3 -m venv cleanyourtv/tools/venv
-cleanyourtv/tools/venv/bin/pip install -q -r cleanyourtv/tools/requirements.txt
+# python3 on Mac/Linux; Git Bash on Windows often only has python (or the py launcher).
+SYSPY=$(command -v python3 || command -v python || command -v py) || { echo "install Python 3 first" >&2; exit 1; }
+"$SYSPY" -m venv cleanyourtv/tools/venv
+VPY=cleanyourtv/tools/venv/bin/python
+[ -x "$VPY" ] || VPY=cleanyourtv/tools/venv/Scripts/python.exe   # Windows layout
+"$VPY" -m pip install -q -r cleanyourtv/tools/requirements.txt
 echo "ready. Next: TV_HOST=<tv ip> scripts/backup.sh"
