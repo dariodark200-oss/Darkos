@@ -1,0 +1,10 @@
+# Batch 3 of 4: Amazon apps the owner does not use, and the ambient screensaver.
+com.amazon.bueller.music                  # Amazon Music
+com.amazon.bueller.photos                 # Amazon Photos
+com.amazon.tv.localgallery
+com.amazon.gamehub                        # Luna / Game Hub
+com.amazon.minitv.android.app
+com.amazon.naatyam
+com.amazon.tahoe                          # Amazon Kids
+com.amazon.tv.ftvambient                  # Ambient Experience
+com.amazon.ftv.screensaver

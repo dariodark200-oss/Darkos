@@ -1,0 +1,9 @@
+# Batch 4 of 4: Alexa extras (Alexa voice itself stays), printing, Wi-Fi password sync.
+# Comment out alexaalerts / alexanotifications if you use Alexa timers or notifications on the TV,
+# and audiohome if you pair Echo speakers to the TV as a home theater.
+com.amazon.tv.alexaalerts
+com.amazon.tv.alexanotifications
+com.amazon.audiohome                      # Alexa Home Theater
+com.amazon.wifilocker                     # syncs saved Wi-Fi passwords to Amazon
+com.android.printspooler                  # printing: nothing to print from on a TV
+com.android.bips

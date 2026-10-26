@@ -1,0 +1,16 @@
+# Batch 1 of 4: content recognition, telemetry and metrics.
+# Amazon Fire TV 75" Omni (AFTTIFF43 / brandenburg, panel AMZ_K24NE5_4K75M600A), Fire OS 7.7.1.x.
+# Source: cleanyourtv examples/amazon-fire-tv-afttiff43/debloat.txt, tested on this exact panel.
+# On Fire OS 7.7.1.4 (PS7714) the two minerva packages are not installed ("Unknown package"); harmless.
+com.amazon.tv.acr                         # ACR: identifies what is on screen, HDMI inputs included
+com.amazon.tv.fw.metrics
+com.amazon.neo.minerva
+com.amazon.neo.minerva.logcat
+com.amazon.wirelessmetrics.service
+com.amazon.perfcollection
+com.amazon.perfc
+com.amazon.dp.logger
+com.amazon.hybridadidservice              # advertising ID
+com.amazon.client.metrics.api             # metrics client API
+com.amazon.ceviche                        # data collection pipelines
+com.amazon.tv.developer.dataservice       # personalization data for third-party apps

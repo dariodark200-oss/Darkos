@@ -1,0 +1,13 @@
+# Batch 2 of 4: ads, sponsored rows, shopping, retail demo, tutorials, popups.
+com.amazon.sneakpeek
+com.amazon.tv.democontent.provider
+com.amazon.shoptv.client
+com.amazon.shoptv.firetv.client
+com.amazon.storm.lightning.tutorial
+com.amazon.tmm.tutorial
+com.amazon.kso.blackbird                  # launcher ad sync / bidding (sponsored banner and rows)
+com.amazon.media.recommendations          # sponsored and recommendation rows
+com.amazon.hedwig                         # Fire TV Channels (free ad-supported channels row)
+com.amazon.systemnotices
+com.amazon.tv.releasenotes                # "what's new" notes
+com.amazon.uxnotification                 # UX notification popups
